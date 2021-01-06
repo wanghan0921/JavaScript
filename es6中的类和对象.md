@@ -22,3 +22,52 @@ string.length
 ```js
 string.substring(1)
 ```
+
+### 3.类
+
+在es6中,可以用class关键字声明类
+
+#### 3.1 创建类
+
+```js
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  des() {
+    return this.name + '的年龄是' + this.age
+  }
+}
+
+let xiaoming = new Person('xiaoming', 18)
+xiaoming.des()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
