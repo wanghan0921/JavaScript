@@ -54,6 +54,12 @@ xiaoming.des()
 >  4. 执行构造函数中的代码（为这个新对象添加属性）
 >  5. 返回新的对象
 
+```js
+var Obj = {};
+Obj._proto_ =  Person.prototype();
+Person.call(Obj);
+```
+
 
 
 
