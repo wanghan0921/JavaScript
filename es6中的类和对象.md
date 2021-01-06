@@ -31,6 +31,8 @@ string.substring(1)
 
 ```js
 class Person {
+  // 这个函数可以接受传递过来的参数, 同时返回实例对象
+  // 就算没有定义, 只要new的时候也会自动生成
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -45,6 +47,12 @@ let xiaoming = new Person('xiaoming', 18)
 xiaoming.des()
 ```
 
+> 补充: new关键字都做了什么?
+>  1. 创建一个新对象
+>  2. 将新对象的_proto_指向构造函数的prototype对象
+>  3. 将构造函数的作用域赋值给新对象 （也就是this指向新对象）
+>  4. 执行构造函数中的代码（为这个新对象添加属性）
+>  5. 返回新的对象
 
 
 
