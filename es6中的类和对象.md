@@ -101,17 +101,20 @@ Class Person {
   constructor(name) {
     this.name = name
     that = this
+    
+    this.btn = document.querySelector('button')
+    
+    this.btn.onclick = this.who
   }
   
   who() {
-    console.log(this.name) 
-    console.log(that.name)
+    console.log(this.name)   // undefined
+    console.log(that.name)   // wanghan
   }
 }
 
 let one = new Person('wanghan')
 
-one.who()  // undefined , 'wanghan'
 ```
 
 
