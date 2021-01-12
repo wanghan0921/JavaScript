@@ -61,10 +61,31 @@ Person.call(Obj);
 ```
 
 
+#### 3.2 继承
 
 
+```js
+class Father {
+  constructor(sum) {
+    this.sum = sum;
+  }
 
+  money() {
+    console.log('1亿')
+    console.log(this.sum)
+  }
+}
 
+class Son extend Father {
+  constructor(sum) {
+    super(sum) // 调用父类中的构造函数
+  }
+}
+
+ver son = new Son('继承sum')
+
+son.money()
+```
 
 
 
