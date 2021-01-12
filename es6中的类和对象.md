@@ -76,7 +76,7 @@ class Father {
   }
 }
 
-class Son extend Father {
+class Son extends Father {
   constructor(sum) {
     super(sum) // 调用父类中的构造函数
   }
