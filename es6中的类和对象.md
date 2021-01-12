@@ -89,8 +89,30 @@ son.money()
 ```
 
 
+### 4.注意点
 
+1. 在es6中,没有变量提升,先要有类才能实例化
+2. 类里面共有的属性和方法, 一定要加this
+3. constructor里面的this指向实例对象 方法里面的this指向这个方法的调用者
 
+```js
+let that
+Class Person {
+  constructor(name) {
+    this.name = name
+    that = this
+  }
+  
+  who() {
+    console.log(this.name) 
+    console.log(that.name)
+  }
+}
+
+let one = new Person('wanghan')
+
+one.who()  // undefined , 'wanghan'
+```
 
 
 
