@@ -79,6 +79,7 @@ class Father {
 class Son extends Father {
   constructor(sum) {
     super(sum) // 调用父类中的构造函数
+    this.sum = sum  // super必须写在this前面
   }
 }
 
